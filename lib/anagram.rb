@@ -7,7 +7,7 @@ class Anagram
   end
   
   def match(anagram_arr)
-    
+    anagram_arr.select
   end
   
 end
