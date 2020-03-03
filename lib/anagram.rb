@@ -16,7 +16,7 @@ class Anagram
       sorted_elements << element.sort
     end
     sorted_elements.each do |element|
-      element == word.sort ? true : false 
+      element == word.sort ? element : [ ] 
     end
   end
   
