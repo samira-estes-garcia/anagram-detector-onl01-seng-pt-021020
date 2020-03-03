@@ -15,6 +15,9 @@ class Anagram
     split_elements.each do |element|
       sorted_elements << element.sort
     end
+    sorted_elements.each do |element|
+      element == word.sort ? true : false 
+    end
   end
   
 end
