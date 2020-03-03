@@ -11,8 +11,10 @@ class Anagram
     anagram_arr.each do |element|
       split_elements << element.split("")
     end
-    split_elements.sort == word.sort ? element : [ ]
+    sorted_elements = []
+    split_elements.each do |element|
+      sorted_elements << element.sort
+    end
   end
   
 end
- #split_element.sort == word.sort ? element : [ ] 
