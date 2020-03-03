@@ -7,7 +7,8 @@ class Anagram
   end
   
   def match(anagram_arr)
-    anagram_arr.select
+    anagram_arr.select do |element|
+      element.split
   end
   
 end
