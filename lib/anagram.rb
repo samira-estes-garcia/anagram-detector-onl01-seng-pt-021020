@@ -10,7 +10,7 @@ class Anagram
     anagram_arr.collect do |element|
       split_elements = element.split("")
     end
-    split_elements.sort == word.sort ? 
+    split_elements.sort == word.sort ? element : [ ]
   end
   
 end
