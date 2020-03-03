@@ -7,8 +7,9 @@ class Anagram
   end
   
   def match(anagram_arr)
-    anagram_arr.collect do |element|
-      split_elements = element.split("")
+    split_elements = []
+    anagram_arr.each do |element|
+      split_elements << element.split("")
     end
     split_elements.sort == word.sort ? element : [ ]
   end
